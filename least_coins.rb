@@ -7,8 +7,8 @@ coin_type = {
   :nickels => 5,
   :pennies => 1
 }
-while cents / 25
-     coin_type[1]
+while cents >= 25
+  
 end
   while cents <= 25 / 10
     puts :dimes
