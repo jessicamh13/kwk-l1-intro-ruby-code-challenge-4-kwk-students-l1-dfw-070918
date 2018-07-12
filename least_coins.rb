@@ -27,7 +27,6 @@ while cents >= 1
   cents = cents - 1 
 end
 return coin_type
-#Code your answer here!
 end
 
-puts least_coins(29)
+puts least_coins(99)
