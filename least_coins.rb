@@ -8,20 +8,26 @@ coin_type = {
   :pennies => 1
 }
 while cents >= 25
-  
+  coin_type[:quarters] += 1 
+  cents = cents - 25 
 end
-  while cents <= 25 / 10
-    puts :dimes
+
+while cents >= 10
+  coin_type[:dimes] += 1 
+  cents = cents - 10 
 end
-  while cents <= 25 / 5
-    puts :nickels
+
+while cents >= 5
+  coin_type[:nickels] += 1 
+  cents = cents - 5 
 end
-  while cents <= 25 / 1
-    puts :pennies
+
+while cents >= 1
+  coin_type[:pennies] += 1 
+  cents = cents - 1 
 end
-least_coins = {:quarters => 
-end
-least_coins(29)
 
 #Code your answer here!
 end
+
+puts least_coins(29)
