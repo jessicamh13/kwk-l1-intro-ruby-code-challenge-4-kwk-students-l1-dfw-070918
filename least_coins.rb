@@ -26,7 +26,7 @@ while cents >= 1
   coin_type[:pennies] += 1 
   cents = cents - 1 
 end
-
+return coin_type
 #Code your answer here!
 end
 
